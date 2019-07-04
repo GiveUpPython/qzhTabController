@@ -1,0 +1,166 @@
+html,body {
+  overflow: hidden;
+  /*background: #262b2e;*/
+  background: linear-gradient(to right, #1b6fb2 0%,#231f21 100%);
+}
+
+#wrapper {
+  height:100%;
+  width:100%;
+  text-align: center;
+  display: table;
+  position:absolute;
+}
+
+#title {
+  display: table-cell;
+  vertical-align: middle;
+  z-index: 999;
+}
+
+#title h2 {
+  color: #fff;
+  font-size: 45px;
+  font-family: "museo-slab";
+}
+
+#title h3 {
+  color: #fff;
+  font-size: 25px;
+  font-family: "museo-sans";
+  font-weight: 300
+}
+
+
+#wrapper canvas {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 1950px;
+  height: auto; 
+}
+
+#canvas {
+  z-index: 1;
+}
+#canvasbg {
+  z-index: -10;
+  -webkit-filter: blur(3px);
+  -moz-filter: blur(3px);
+  -o-filter: blur(3px);
+  filter: blur(3px);
+  opacity: 0.6;
+}
+
+
+
+#map {     
+  height: 100vh;
+  width: 100%;
+  position: absolute;
+  top: 0px;
+  margin:0;
+  /*隐藏溢出*/
+  overflow:hidden;
+  display:none;
+  /*text-align: center;*/
+}
+
+#thediv{ 
+    width:400px; 
+    height:500px; 
+    /*background:#0084ff; */
+    position:absolute; 
+    left:50%; 
+    top:50%; 
+    margin-left:-200px; 
+    margin-top:-250px;
+    /*filter:alpha(Opacity=80);
+    -moz-opacity:0.5;
+    opacity: 0.3; */
+    background:rgba(255,255,255,0.4);/*div透明*/
+    border: 0px solid black;
+    border-radius:30px;
+  }
+#fourdiv{
+  width: 400px;
+  height: 350px;
+  left:50%; 
+  top:50%; 
+  position:absolute; /*绝对定位*/
+  margin-left:-200px; 
+  margin-top:-250px;
+  text-align: center;/*div内的元素居中*/
+  /*border: 1px solid black;*/
+}
+#twodiv{
+  width: 90%;
+  height: 5%;
+  border: 1px solid block;
+  margin-left:-200px; 
+  margin-top:-300px;
+}
+
+#naminput{
+  width: 90%;
+  height: 5%;/*input大小*/
+  margin-top: 10%;/*input位置移动*/
+  background:none;/*输入框透明*/
+  outline: none;/*点击后没有蓝色边框*/
+  BORDER-TOP-STYLE: none; 
+  BORDER-RIGHT-STYLE: none; 
+  BORDER-LEFT-STYLE: none; 
+  BORDER-BOTTOM-STYLE: black;/*只显示下划线，还不会设置颜色*/
+  font-color:black;
+  /*border: 0px solid black;*/
+}
+#passinput{
+  width: 90%;
+  height: 5%;/*input大小*/
+  margin-top: 20%;/*input位置移动*/
+  background:none;/*输入框透明*/
+  outline: none;/*点击后没有蓝色边框*/
+  BORDER-TOP-STYLE: none; 
+  BORDER-RIGHT-STYLE: none; 
+  BORDER-LEFT-STYLE: none; 
+  BORDER-BOTTOM-STYLE: black;/*只显示下划线，还不会设置颜色*/
+}
+input::-webkit-input-placeholder {
+       /* placeholder颜色  */
+       color: #0084ff;
+       /* placeholder字体大小  */
+       font-size: 12px;
+       /* placeholder位置  */
+        /*text-align: right;*/
+}
+#subone{
+  width: 70%;
+  height: 7%;
+  border: 1px solid #0084ff;
+  background:#0084ff;
+  cursor:pointer;
+  outline:none;
+  border-radius:10px;/*设置圆角*/
+  font-size: 15px;
+}
+.twotext{
+  font-size: 15px;
+  color:#0084ff;
+}
+
+#onetext{
+  font-size: 25px;
+  color:#0084ff;
+  margin-top: 40px; 
+}
+
+a{
+  text-decoration: none;
+}
+
+.declare{
+  display:absolute;
+  bottom: 0;
+  margin-top: 50px;
+  font-size: 12px;
+}

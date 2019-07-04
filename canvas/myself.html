@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<link href="myself.css" rel="stylesheet" type="text/css"/>
+	<script type="text/javascript" src="jquery-3.3.1.js"></script>
+	<title>canvas画布</title>
+</head>
+<body>
+	<script type="text/javascript">
+		$(document).ready(function(){
+		  window.onmousewheel = function(e){
+		  	console.log('1');
+			$('#wrapper').css('display','none');
+			$('body').css({'background':'#fff','margin':'0'});
+			$('html').css('background','#fff');
+			$('#map').css('display','block');
+			console.log('2');
+		  };
+		  $(document).mousemove(function(e){
+		    $("#onemouse").text(e.pageX + ", " + e.pageY);
+		    var x=0;
+			// var y=0;
+		    x=-(e.pageX/10);
+		    // y=-(e.pageY/2);
+		    // $("span").text(x+ ", " +y);
+		    $("img").animate({left: x+"px"},0);
+		    // $("img").animate({top: y+"px"}, 0);
+		  });
+		});
+	</script>
+	<div id="wrapper">
+	    <div id="title">
+	        <h2>HELLO WORLD</h2>
+	        <h3>Welcome to my resume.Please slide down</h3>
+	    </div>
+	    <canvas id="canvas" width="1950px" height="800px"></canvas>
+	    <canvas id="canvasbg" width="1950px" height="800px"></canvas>
+	</div>
+	<script src="myself.js"></script>
+
+	<div id="map">
+		<span id="psaaimg"></span>
+		
+		<img src="5b9cb160072d8.jpg" style="position:absolute;width:140%;top: -400px;">
+
+    	<div id="thediv">
+	       	<div id="fourdiv">
+		       	<p id="onetext">认识世界，认识更好的你！</p>
+				<input type=text name="naminput" id="naminput" placeholder="请输入手机号或者邮箱">
+				<div>
+					<input type=password name="passinput" id="passinput" placeholder="请输入密码">
+				</div>
+				<br>
+				<input type="submit" value="登 录" id="subone">
+				<!-- <p>请输入你的用户名</p> -->
+				<p>鼠标：<span id="onemouse"></span></p>
+				<a href="https://www.baidu.com/"><span class="twotext">二维码登录</span></a>
+				<span>·</span>
+				<a href="https://www.baidu.com/"><span class="twotext">社交软件登录</span></a>
+				<p class="declare">仅作为个人网页技术练手设计，不做其他用途</p>
+			</div>
+       </div>
+    </div>
+</body>
+</html>

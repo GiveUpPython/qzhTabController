@@ -1,0 +1,52 @@
+html,body {
+  overflow: hidden;
+  background: #262b2e
+}
+
+#wrapper {
+  height:100%;
+  width:100%;
+  text-align: center;
+  display: table;
+  position:absolute;
+}
+
+#title {
+  display: table-cell;
+  vertical-align: middle;
+  z-index: 999;
+}
+
+#title h2 {
+  color: #fff;
+  font-size: 45px;
+  font-family: "museo-slab";
+}
+
+#title h3 {
+  color: #fff;
+  font-size: 25px;
+  font-family: "museo-sans";
+  font-weight: 300
+}
+
+
+#wrapper canvas {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 1950px;
+  height: auto; 
+}
+
+#canvas {
+  z-index: 1;
+}
+#canvasbg {
+  z-index: -10;
+  -webkit-filter: blur(3px);
+  -moz-filter: blur(3px);
+  -o-filter: blur(3px);
+  filter: blur(3px);
+  opacity: 0.6;
+}
